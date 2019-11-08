@@ -2,13 +2,12 @@ version: 2
 jobs:
   build:
     docker:
-      # Alpine Linux
       - image: circleci/node:8.11.2
     parallelism: 1
     working_directory: ~/react-pdf-example
     environment:
     steps:
-      - run: apk update && apk add git
+      # - run: apk update && apk add git
       - checkout
       # - run: git submodule sync $$ git submodule update --init
       - attach_workspace:
@@ -45,7 +44,7 @@ workflows:
               - master
       - deploy:
         requires:
-          - build
+          - build:
             filters:
               branches:
                 only:
