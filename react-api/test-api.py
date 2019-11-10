@@ -7,6 +7,8 @@ def start(event, context):
         "input": event
     }
 
+    print("run lambda with event: {}".format(event))
+
     response = {
         "statusCode": 200,
         "body": json.dumps(body),

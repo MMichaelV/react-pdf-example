@@ -45,7 +45,7 @@ package:
 
 functions:
   test-api:
-    handler: test_api.start
+    handler: test-api.start
     environment:
       uploadBucket: ${self:custom.uploadBucket}
     events:
