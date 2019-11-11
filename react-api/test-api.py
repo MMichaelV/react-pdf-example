@@ -2,10 +2,12 @@ import json
 
 
 def start(event, context):
-    body = {
-        "message": "Go Serverless v1.0! Your function executed successfully!",
-        "input": event
-    }
+    body = [
+        {"number": 1, "name": "name1"},
+        {"number": 2, "name": "name2"},
+        {"number": 3, "name": "name3"},
+        {"number": 4, "name": "name4"}
+    ]
 
     print("run lambda with event: {}".format(event))
 

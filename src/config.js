@@ -6,6 +6,6 @@ export default {
   },
   apiGateway: {
     REGION: "us-east-1",
-    URL: "https://m07z07b9a7.execute-api.us-east-1.amazonaws.com/prod"
+    URL: process.env.REACT_APP_API_URL
   }
 };

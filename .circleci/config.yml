@@ -23,6 +23,7 @@ jobs:
       - checkout
       - run: yarn install
       - run: sudo apt-get install awscli
+      - run: aws s3 cp s3://mmv-serverless-packages/.env.react-example .env
       - run: yarn build
       - run: aws s3 sync build/ s3://react-pdf-example --delete --region us-east-1
 workflows:
