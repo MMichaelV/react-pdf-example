@@ -18,6 +18,9 @@ function App(props) {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
+            <LinkContainer to="/newfile">
+              <NavItem href="/newfile">Newfile</NavItem>
+            </LinkContainer>
             <LinkContainer to="/signup">
               <NavItem href="/signup">Signup</NavItem>
             </LinkContainer>
